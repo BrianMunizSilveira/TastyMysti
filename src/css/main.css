@@ -387,6 +387,13 @@ body {
                     color: var(--light);
                 }
 
+                .video-description {
+                    font-size: 0.9rem;
+                    color: var(--light);
+                    margin-bottom: 1rem;
+                    text-align: left;
+                }
+
                 .video-link {
                     display: flex;
                     align-items: center;
@@ -413,6 +420,12 @@ body {
     padding: 3rem 1rem;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: var(--accent);
+    }
 
     .social-grid {
         display: grid;
@@ -464,6 +477,12 @@ body {
     padding: 2rem 0;
     background: var(--section-bg-color);
     text-align: center;
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: var(--accent);
+    }
 
     .partners-grid {
         display: grid;
