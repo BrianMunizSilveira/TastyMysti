@@ -90,7 +90,7 @@ body {
     transition: left 0.5s ease;
     z-index: 1000;
     display: flex;
-    
+
     &.active {
         left: 0;
     }
@@ -136,16 +136,16 @@ body {
     justify-content: space-between;
     width: 30px;
     height: 21px;
-    
+
     &.is-active {
         .bar:nth-child(1) {
             transform: translateY(9px) rotate(45deg);
         }
-        
+
         .bar:nth-child(2) {
             opacity: 0;
         }
-        
+
         .bar:nth-child(3) {
             transform: translateY(-9px) rotate(-45deg);
         }
@@ -177,7 +177,7 @@ body {
     align-items: center;
     gap: 0.5rem;
     margin-top: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     &:hover {
         transform: translateY(-3px);
@@ -380,18 +380,11 @@ body {
                 flex-direction: column;
                 padding: 1rem;
                 align-items: center;
-                
+
                 .video-title {
                     font-size: 1.1rem;
                     margin-bottom: 0.5rem;
                     color: var(--light);
-                }
-
-                .video-description {
-                    font-size: 0.9rem;
-                    color: var(--light);
-                    margin-bottom: 1rem;
-                    text-align: left;
                 }
 
                 .video-link {
@@ -413,6 +406,13 @@ body {
     }
 }
 
+.video-description {
+    font-size: 0.9rem;
+    color: var(--light);
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
 /* ============================
    SOCIAL LINKS SECTION - Mobile First
 ============================ */
@@ -420,12 +420,6 @@ body {
     padding: 3rem 1rem;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
-
-    .section-title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        color: var(--accent);
-    }
 
     .social-grid {
         display: grid;
@@ -470,6 +464,12 @@ body {
     }
 }
 
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
 /* ============================
    PARTNERS SECTION - Mobile First
 ============================ */
@@ -477,12 +477,6 @@ body {
     padding: 2rem 0;
     background: var(--section-bg-color);
     text-align: center;
-
-    .section-title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        color: var(--accent);
-    }
 
     .partners-grid {
         display: grid;
@@ -509,9 +503,17 @@ body {
             margin-right: 5px;
             vertical-align: middle;
 
-            &.editor { background-color: #FF6B6B; }
-            &.collaborator { background-color: #4ECDC4; }
-            &.developer { background-color: #4285F4; }
+            &.editor {
+                background-color: #FF6B6B;
+            }
+
+            &.collaborator {
+                background-color: #4ECDC4;
+            }
+
+            &.developer {
+                background-color: #4285F4;
+            }
         }
     }
 
@@ -559,12 +561,10 @@ body {
                 left: -50%;
                 width: 200%;
                 height: 200%;
-                background: linear-gradient(
-                    to bottom right,
-                    rgba(255,255,255,0) 45%,
-                    rgba(255,255,255,0.8) 50%,
-                    rgba(255,255,255,0) 55%
-                );
+                background: linear-gradient(to bottom right,
+                        rgba(255, 255, 255, 0) 45%,
+                        rgba(255, 255, 255, 0.8) 50%,
+                        rgba(255, 255, 255, 0) 55%);
                 transform: rotate(30deg);
                 opacity: 0;
                 transition: opacity 0.3s;
@@ -613,7 +613,7 @@ body {
             font-weight: bold;
             padding: 2px 5px;
             border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             border: 1px solid white;
             transition: all 0.3s ease;
             opacity: 0.9;
@@ -646,9 +646,20 @@ body {
     }
 }
 
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
 @keyframes shine {
-    0% { transform: rotate(30deg) translate(-30%, -30%); }
-    100% { transform: rotate(30deg) translate(30%, 30%); }
+    0% {
+        transform: rotate(30deg) translate(-30%, -30%);
+    }
+
+    100% {
+        transform: rotate(30deg) translate(30%, 30%);
+    }
 }
 
 /* ============================
@@ -678,6 +689,7 @@ body {
             .hero-title {
                 font-size: 3rem;
             }
+
             .hero-subtitle {
                 font-size: 1.3rem;
             }
@@ -695,7 +707,7 @@ body {
     .menu-toggle {
         display: none;
     }
-    
+
     .nav-menu {
         position: static;
         width: auto;
@@ -713,6 +725,7 @@ body {
             .hero-title {
                 font-size: 3.5rem;
             }
+
             .hero-subtitle {
                 font-size: 1.5rem;
             }
