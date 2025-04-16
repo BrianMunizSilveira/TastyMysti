@@ -43,7 +43,7 @@ const DOM = {
 async function buscarVideosYouTube() {
     try {
         const resposta = await fetch('/api/proxy');
-        if (!resoista.ok) throw new Error('Erro na resposta da API');
+        if (!resposta.ok) throw new Error('Erro na resposta da API');
         return await resposta.json();
     } catch (erro) {
         console.log('Erro ao buscar vídeos:', erro);
