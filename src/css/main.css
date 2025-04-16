@@ -256,6 +256,13 @@ body {
 /* ============================
    CONTENT SECTION - Mobile First
 ============================ */
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
 .section {
     padding: 3rem 1rem;
 
@@ -341,13 +348,6 @@ body {
 .videos-section {
     padding: 3rem 1rem;
     background: linear-gradient(to bottom, var(--dark), var(--secondary));
-
-    .section-title {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        color: var(--accent);
-    }
 
     .video-grid {
         display: grid;
@@ -462,12 +462,6 @@ body {
             }
         }
     }
-}
-
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: var(--accent);
 }
 
 /* ============================
@@ -644,12 +638,6 @@ body {
             border: 3px solid #4285F4;
         }
     }
-}
-
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: var(--accent);
 }
 
 @keyframes shine {
